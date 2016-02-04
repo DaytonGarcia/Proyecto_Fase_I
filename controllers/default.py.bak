@@ -8,7 +8,7 @@ def index():
     return dict()
 
 @auth.requires_login()
-def especializacion():
+def Especializacion():
     form = SQLFORM.smartgrid(db.Especializacion,onupdate=auth.archive)
     return locals()
 
