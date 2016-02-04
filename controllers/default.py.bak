@@ -16,4 +16,4 @@ def alumnos():
     return locals()
 
 def ayuda():
-    return dict()
+    return locals()

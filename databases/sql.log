@@ -243,3 +243,28 @@ CREATE TABLE auth_cas(
     PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARACTER SET utf8;
 success!
+timestamp: 2016-02-04T13:38:08.447320
+CREATE TABLE web2py_session_Proyecto_Fase_I_Rocael(
+    id INT AUTO_INCREMENT NOT NULL,
+    locked CHAR(1),
+    client_ip VARCHAR(64),
+    created_datetime DATETIME,
+    modified_datetime DATETIME,
+    unique_key VARCHAR(64),
+    session_data LONGBLOB,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2016-02-04T16:29:00.105923
+CREATE TABLE ALUMNO_archive(
+    current_record INT  , INDEX current_record__idx (current_record), FOREIGN KEY (current_record) REFERENCES ALUMNO (ID) ON DELETE CASCADE,
+    ID INT AUTO_INCREMENT NOT NULL,
+    Carne VARCHAR(512),
+    Nombres VARCHAR(512),
+    Apellidos VARCHAR(512),
+    Direccion VARCHAR(512),
+    Telefono VARCHAR(512),
+    Correo VARCHAR(512),
+    PRIMARY KEY (ID)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!

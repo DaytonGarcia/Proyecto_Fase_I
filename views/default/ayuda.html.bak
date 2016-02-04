@@ -1,0 +1,8 @@
+{{extend 'layout.html'}}
+<h1>Daniel Cos
+    Rocael Isidro
+    Dayton Garcia
+    Erick Suy
+    Lester Tzoc
+</h1>
+{{=BEAUTIFY(response._vars)}}

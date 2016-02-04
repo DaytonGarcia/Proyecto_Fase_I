@@ -11,4 +11,4 @@ db.define_table('ALUMNO',
 
 
 
-db.define_table('ALUMNO_archive',db.ALUMNO,Field('current_record','reference ALUMNO',readable=False,writable=False))
+db.define_table('ALUMNO_archive',db.ALUMNO_archive,Field('current_record','reference ALUMNO',readable=False,writable=False))
