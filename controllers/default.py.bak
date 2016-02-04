@@ -11,5 +11,5 @@ def error():
     return dict()
 @auth.requires_login()
 def cursos():
-    form = SQLFORM.smartgrid(db.cursos)
+    form = SQLFORM.smartgrid(db.cursos,onupdate=auth.archive)
     return locals()

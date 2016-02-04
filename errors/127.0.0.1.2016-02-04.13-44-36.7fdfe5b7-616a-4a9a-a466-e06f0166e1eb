@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.AttributeError'> 'DIV' object has no attribute 'accepts'"
+p3
+sS'layer'
+p4
+S'/home/lester/Documentos/web2py/applications/ProyectoFase1Lester/controllers/default.py'
+p5
+sS'code'
+p6
+S"# -*- coding: utf-8 -*-\n### required - do no delete\ndef user(): return dict(form=auth())\ndef download(): return response.download(request,db)\ndef call(): return service()\n### end requires\ndef index():\n    return dict()\n\ndef error():\n    return dict()\n@auth.requires_login()\ndef cursos():\n    form = SQLFORM.smartgrid(db.cursos,onupdate=auth.archive)\n    if form.accepts(request.vars, session): response.flash='registro insertado'\n    elif form.errors: response.flash='error en el formulario'\n    return locals()\n\nresponse._vars=response._caller(cursos)\n"
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "/home/lester/Documentos/web2py/gluon/restricted.py", line 227, in restricted\n    exec ccode in environment\n  File "/home/lester/Documentos/web2py/applications/ProyectoFase1Lester/controllers/default.py", line 19, in <module>\n  File "/home/lester/Documentos/web2py/gluon/globals.py", line 412, in <lambda>\n    self._caller = lambda f: f()\n  File "/home/lester/Documentos/web2py/gluon/tools.py", line 4236, in f\n    return action(*a, **b)\n  File "/home/lester/Documentos/web2py/applications/ProyectoFase1Lester/controllers/default.py", line 15, in cursos\n    if form.accepts(request.vars, session): response.flash=\'registro insertado\'\nAttributeError: \'DIV\' object has no attribute \'accepts\'\n'
+p11
+s.

@@ -6,3 +6,5 @@ db.define_table('cursos',
                 Field('creditos', type='integer', label=T('CREDITOS DEL CURSO')),
                 format='%(nombre)s',
                 migrate=False)
+
+db.define_table('cursos_archive',db.cursos,Field('current_record','reference cursos',readable=False,writable=False))
