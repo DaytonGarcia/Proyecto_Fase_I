@@ -148,6 +148,7 @@
 'edit': 'editar',
 'EDIT': 'EDITAR',
 'Edit': 'Editar',
+'Edit %(entity)s': 'Edit %(entity)s',
 'Edit application': 'Editar aplicación',
 'edit controller': 'editar controlador',
 'Edit current record': 'Edite el registro actual',

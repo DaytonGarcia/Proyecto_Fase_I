@@ -2,5 +2,5 @@
 db.define_table('Especializacion',
                 Field('id', 'id'),
                 Field('Detalle', type='string', label=T('NOMBRE')),
-                format='%(NOMBRE)s',
+                format='%(Detalle)s',
                 migrate=False)

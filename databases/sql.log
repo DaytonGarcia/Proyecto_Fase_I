@@ -255,3 +255,11 @@ CREATE TABLE web2py_session_Proyecto_Fase_I(
     PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARACTER SET utf8;
 success!
+timestamp: 2016-02-04T15:56:37.590647
+CREATE TABLE Especializacion_archive(
+    current_record INT  , INDEX current_record__idx (current_record), FOREIGN KEY (current_record) REFERENCES Especializacion (id) ON DELETE CASCADE,
+    id INT AUTO_INCREMENT NOT NULL,
+    Detalle VARCHAR(512),
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
