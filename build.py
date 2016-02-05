@@ -1,1 +1,1 @@
-print "build"
+print 'build'
