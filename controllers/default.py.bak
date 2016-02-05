@@ -8,9 +8,20 @@ def index():
     return dict()
 
 @auth.requires_login()
-def Especializacion():
-    form = SQLFORM.smartgrid(db.Especializacion,onupdate=auth.archive)
-    return locals()
+#def especializacion():
+#    form = SQLFORM.smartgrid(db.Especializacion,onupdate=auth.archive,formname='web2py_grid')
+#    return locals()
+
+def especializacion():
+   form = SQLFORM(db.Especializacion,deletable=True)
+   grid = SQLFORM.smartgrid(db.Especializacion,onupdate=auth.archive,formname='web2py_grid')
+   if form.process(formname='registro').accepted:
+       response.flash = 'Se ha registrado una nueva especializacion'
+   elif form.errors:
+       response.flash = 'El formulario tiene errores'
+   else:
+       response.flash = 'Aca podra Crear nuevas especializaciones'
+   return dict(form=form, grid=grid)
 
 def error():
     return dict()

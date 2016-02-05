@@ -1,3 +1,4 @@
 {{extend 'layout.html'}}
-<h1>Está es la plantilla default/especializacion.html</h1>
-{{=BEAUTIFY(response._vars)}}
+<h2>Especializacion</h2>
+FORMULARIO PARA CREAR
+<p>{{=form}}</p>
