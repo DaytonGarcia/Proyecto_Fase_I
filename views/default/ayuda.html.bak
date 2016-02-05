@@ -1,8 +1,8 @@
 {{extend 'layout.html'}}
-<h1>Daniel Cos
-    Rocael Isidro
-    Dayton Garcia
-    Erick Suy
-    Lester Tzoc
+ <h1>Dayton Estuardo Garcia Montufar 200915754 Scum Master<br/>
+    Erick Bryan Suy Miranda          201222638 Product Owner<br/>
+    Lester Enrique Tzoc Soc          201213456 Scrum Team<br/>
+    Daniel Alexander Cos Pirir       201213295 Scrum Team<br/>
+    Rocael Eduardo Isidro Sebastian  201114159 Scrum Team <br/>
 </h1>
 {{=BEAUTIFY(response._vars)}}
