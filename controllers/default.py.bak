@@ -9,7 +9,7 @@ def index():
 
 @auth.requires_login()
 def catedratico():
-    form = SQLFORM.smartgrid(db.Catedratico)
+    form = SQLFORM.smartgrid(db.Catedratico,onupdate=Catedratico.archive)
     return locals()
 
 

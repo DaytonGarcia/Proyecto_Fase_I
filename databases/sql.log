@@ -243,3 +243,26 @@ CREATE TABLE auth_cas(
     PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARACTER SET utf8;
 success!
+timestamp: 2016-02-04T12:31:49.539073
+CREATE TABLE web2py_session_ProyectoFase1(
+    id INT AUTO_INCREMENT NOT NULL,
+    locked CHAR(1),
+    client_ip VARCHAR(64),
+    created_datetime DATETIME,
+    modified_datetime DATETIME,
+    unique_key VARCHAR(64),
+    session_data LONGBLOB,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2016-02-04T13:41:09.699243
+CREATE TABLE Catedratico_archive(
+    id INT AUTO_INCREMENT NOT NULL,
+    Nombre VARCHAR(512),
+    Dpi VARCHAR(512),
+    Telefono INT,
+    Especializacion INT,
+    current_record INT  , INDEX current_record__idx (current_record), FOREIGN KEY (current_record) REFERENCES Catedratico (id) ON DELETE CASCADE,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
