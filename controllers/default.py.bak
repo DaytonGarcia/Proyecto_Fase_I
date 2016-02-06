@@ -13,14 +13,12 @@ def index():
 #    return locals()
 
 def especializacion():
-   form = SQLFORM(db.Especializacion,deletable=True)
+   form = SQLFORM(db.Especializacion)
    grid = SQLFORM.smartgrid(db.Especializacion,onupdate=auth.archive,formname='web2py_grid')
    if form.process(formname='registro').accepted:
        response.flash = 'Se ha registrado una nueva especializacion'
    elif form.errors:
        response.flash = 'El formulario tiene errores'
-   else:
-       response.flash = 'Aca podra Crear nuevas especializaciones'
    return dict(form=form, grid=grid)
 
 def error():
