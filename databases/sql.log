@@ -266,3 +266,53 @@ CREATE TABLE Catedratico_archive(
     PRIMARY KEY (id)
 ) ENGINE=InnoDB CHARACTER SET utf8;
 success!
+timestamp: 2016-02-05T15:36:28.709241
+CREATE TABLE web2py_session_Fase_I_Suy(
+    id INT AUTO_INCREMENT NOT NULL,
+    locked CHAR(1),
+    client_ip VARCHAR(64),
+    created_datetime DATETIME,
+    modified_datetime DATETIME,
+    unique_key VARCHAR(64),
+    session_data LONGBLOB,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB CHARACTER SET utf8;
+success!
+timestamp: 2016-02-05T15:51:21.801864
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T15:52:14.560483
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T15:53:14.510565
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T15:53:42.778951
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T15:54:57.598616
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T15:58:43.331950
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T15:58:55.636858
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:00:42.089392
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:00:53.979013
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:02:37.391929
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:02:37.626096
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:03:06.255688
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:04:06.916614
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:05:07.480578
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:05:26.336027
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:06:41.534639
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:08:48.159444
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:09:18.921151
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
+timestamp: 2016-02-05T16:10:29.332475
+ALTER TABLE Catedratico_archive ADD nombre__tmp VARCHAR(512) NOT NULL;
