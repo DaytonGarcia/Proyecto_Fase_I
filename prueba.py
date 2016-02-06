@@ -29,8 +29,8 @@ assert 'Welcome danigay' in client.text
 # _formname='registro' Esto se queda asi
 # data1 es el nombre del objeto que tiene los mismo atributos que mi tabla
 # client.post('especializacion', data=data1) especializacion es el nombre de la pagina html, que va despues de default/ 
-data1 = dict(codigo=123,
-			nombre='CursoPrueba',
+data1 = dict(codigo=9876,
+			nombre='CursoSubido',
 			creditos=4,
             _formname='cursos')
 client.post('cursos', data=data1)
