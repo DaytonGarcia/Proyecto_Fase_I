@@ -42,4 +42,4 @@ client.get('user/logout')
 print
 for method, url, status, t in client.history:
     if  status==200:
-        print url+' superada' + t
+        print url+' superada'
